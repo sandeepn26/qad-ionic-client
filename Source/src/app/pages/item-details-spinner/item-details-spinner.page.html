@@ -1,0 +1,24 @@
+<ion-app>
+  <!-- Header -->
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/"></ion-back-button>
+      </ion-buttons>
+      <ion-title>Spinner page</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <!-- Content -->
+  <ion-content>
+    <ion-slides pager="true">
+      <ion-slide *ngFor="let item of data;let i = index">
+        <ion-card no-box-shadow>
+            <!-- Default Spinner -->
+            <ion-spinner *ngIf="isType(0)" [name]="item.icon"></ion-spinner>
+            <!-- Creativ Studio Spinner (Custom components) -->
+            <cs-spinner svg-size *ngIf="isType(1)" [name]="item.icon"></cs-spinner>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </ion-content>
+</ion-app>
