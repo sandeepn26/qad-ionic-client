@@ -63,6 +63,15 @@ export class MenuService implements IService {
         'singlePage': false
       },
       {
+        'url': 'items/registration',
+        'title': 'Sign up',
+        'theme': 'registration',
+        'icon': 'icon-comment-account',
+        'listView': false,
+        'component': '',
+        'singlePage': false
+      },
+      {
         'url': 'items/forgetPassword',
         'title': 'Forgot Password Pages',
         'theme': 'forgetPassword',
@@ -274,6 +283,24 @@ export class MenuService implements IService {
         'title': 'Alert',
         'theme': 'alert',
         'icon': 'icon-alert',
+        'listView': false,
+        'component': '',
+        'singlePage': false
+      },
+	    {
+        'url': 'login/0',
+        'title': 'QAD Login',
+        'theme': 'login',
+        'icon': 'icon-lock-open-outline',
+        'listView': false,
+        'component': '',
+        'singlePage': false
+      },
+      {
+        'url': 'expandable/0',
+        'title': 'My Teams',
+        'theme': 'layout1',
+        'icon': 'icon-comment-account',
         'listView': false,
         'component': '',
         'singlePage': false

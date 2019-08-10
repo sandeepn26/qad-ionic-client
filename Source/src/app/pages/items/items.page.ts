@@ -17,6 +17,7 @@ import { WizardService } from '../../services/wizard-service';
 import { TabsService } from '../../services/tabs-service';
 import { LoginService } from '../../services/login-service';
 import { RegisterService } from '../../services/register-service';
+import { RegistrationService } from '../../services/registration-service';
 import { ListViewService } from '../../services/list-view-service';
 import { ParallaxService } from '../../services/parallax-service';
 import { ImageGalleryService } from '../../services/image-gallery-service';
@@ -42,7 +43,7 @@ import { AppSettings } from './../../services/app-settings';
     templateUrl: 'items.html',
     providers: [
         MailChimpService, TextViewService, SpinnerService,
-        SplashScreenService, LoginService, RegisterService,
+        SplashScreenService, LoginService, RegisterService, RegistrationService,
         SearchBarService, CheckBoxService, WizardService, TabsService, ParallaxService,
         ListViewService, ImageGalleryService, NewPasswordService, ForgetPasswordService,
         HttpService, ValidationService, MapsService, QRCodeService, RadioButtonService, RangeService,
@@ -69,6 +70,7 @@ export class ItemsPage {
         private listViewService: ListViewService,
         private loginService: LoginService,
         private registerService: RegisterService,
+        private registrationService: RegistrationService,
         private splashScreenService: SplashScreenService,
         private httpService: HttpService,
         private validationService: ValidationService,
@@ -96,6 +98,7 @@ export class ItemsPage {
             'checkBoxes': this.checkBoxService,
             'login': this.loginService,
             'register': this.registerService,
+            'registration': this.registrationService,
             'imageGallery': this.imageGalleryService,
             'textViews': this.textViewService,
             'spinner': this.spinnerService,

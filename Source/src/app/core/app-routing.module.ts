@@ -33,6 +33,10 @@ const routes: Routes = [
     loadChildren: '../pages/item-details-register/item-details-register.module#ItemDetailsRegisterPageModule'
   },
   {
+    path: 'registration/:type',
+    loadChildren: '../pages/qad-register/registration.module#RegistrationPageModule'
+  },
+  {
     path: 'forgot-password/:type',
     loadChildren: '../pages/item-details-forgot-password/item-details-forgot-password.module#ItemDetailsForgotPasswordPageModule'
   },

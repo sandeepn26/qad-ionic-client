@@ -34,7 +34,7 @@ export class ListViewExpandableService implements IService {
     //* Data Set for page 1
     getDataForLayout1 = (): any => {
         return {
-            'toolbarTitle': 'List Big Image',
+            'toolbarTitle': 'My Teams',
             'items': [
                 {
                     'id': 1,

@@ -12,6 +12,7 @@ import { LoginLayout2Page } from './login/login-layout-2/login-layout-2.page';
 
 import { RegisterLayout1Page } from './register/register-layout-1/register-layout-1.page';
 import { RegisterLayout2Page } from './register/register-layout-2/register-layout-2.page';
+import { QadRegister1Page } from './qad-register/qad-register-1/qad-register-1.page';
 
 import { ForgotPasswordLayout1Page } from './forgot-password/forgot-password-layout-1/forgot-password-layout-1.page';
 import { ForgotPasswordLayout2Page } from './forgot-password/forgot-password-layout-2/forgot-password-layout-2.page';
@@ -142,7 +143,7 @@ import { TabLayout3PageModule } from './tab/tab-layout-3/tab-layout-3.module';
   ],
   declarations: [
     FilterPipe, ParallaxHeader, LoginLayout1Page, LoginLayout2Page,
-    RegisterLayout1Page, RegisterLayout2Page,
+    RegisterLayout1Page, RegisterLayout2Page, QadRegister1Page,
     ForgotPasswordLayout1Page, ForgotPasswordLayout2Page,
     NewPasswordLayout1Page, NewPasswordLayout2Page,
     CheckBoxLayout1Page, CheckBoxLayout2Page, CheckBoxLayout3Page,
@@ -173,7 +174,7 @@ import { TabLayout3PageModule } from './tab/tab-layout-3/tab-layout-3.module';
   ],
   exports: [
     FilterPipe, ParallaxHeader, LoginLayout1Page, LoginLayout2Page,
-    RegisterLayout1Page, RegisterLayout2Page,
+    RegisterLayout1Page, RegisterLayout2Page, QadRegister1Page,
     ForgotPasswordLayout1Page, ForgotPasswordLayout2Page,
     NewPasswordLayout1Page, NewPasswordLayout2Page,
     CheckBoxLayout1Page, CheckBoxLayout2Page, CheckBoxLayout3Page,
