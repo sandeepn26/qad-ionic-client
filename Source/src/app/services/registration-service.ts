@@ -15,7 +15,8 @@ export class RegistrationService implements IService {
     getAllThemes = (): Array<any> => {
         return [
             { 'url': 'registration/0', 'title': 'Sign up', 'theme': 'layout1' },
-            { 'url': 'registration/1', 'title': 'Sign up 2', 'theme': 'layout2' }
+            { 'url': 'registration/1', 'title': 'Sign up 2', 'theme': 'layout2' },
+            { 'url': 'registration/2', 'title': 'Sign in', 'theme': 'layout1' }
         ];
     }
 
@@ -70,6 +71,27 @@ export class RegistrationService implements IService {
             'iconEmail': 'icon-email-outline',
             'email': 'Email',
             'submit': 'submit',
+        };
+    }
+
+    //* Data Set for page 3
+    getDataForLayout3 = (): any => {
+        return {
+            'toolbarTitle': 'Sign in',
+            'logo': 'assets/imgs/logo/login.png',
+            'register': 'Login',
+            'username': 'Username',
+            'city': 'City',
+            'country': 'Country',
+            'password': 'Password',
+            'email': 'Email',
+            'usernamePlaceholder': 'Your Username',
+            'cityPlaceholder': 'Your City',
+            'countryPlaceholder': 'Your Country',
+            'passwordPlaceholder': 'Your Password',
+            'emailPlaceholder': 'Your Email',
+            'button': 'Login',
+            'skip': 'Skip'
         };
     }
 

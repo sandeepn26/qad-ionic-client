@@ -1,5 +1,6 @@
 :host-context() {
-  --img-logo: 240px;
+  --img-logo: 50px;
+  --color-text: var(--cs-text-secondary, #0090d0)
 }
 
 ion-grid,
@@ -8,9 +9,12 @@ ion-row {
   background: var(--cs-background-primary, #fff);
 }
 
+h1 {
+  color: var(--color-text, var(--cs-text-secondary, #0090d0));
+}
+
 ion-img {
   width: var(--img-logo);
-  clear: both;
 }
 
 ion-item {

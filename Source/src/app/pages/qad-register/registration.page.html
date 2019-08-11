@@ -20,5 +20,12 @@
       (onSkip)="onSkip($event)">
     </test-1>
 
+    <cs-auth
+      *ngIf="isType(2)"
+      [data]="data"
+      (onRegister)="onRegister($event)"
+      (onSkip)="onSkip($event)">
+  </cs-auth>
+
   </ion-content>
 </ion-app>

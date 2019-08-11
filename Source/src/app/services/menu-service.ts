@@ -63,8 +63,17 @@ export class MenuService implements IService {
         'singlePage': false
       },
       {
-        'url': 'items/registration',
+        'url': 'registration/0',
         'title': 'Sign up',
+        'theme': 'registration',
+        'icon': 'icon-comment-account',
+        'listView': false,
+        'component': '',
+        'singlePage': false
+      },
+      {
+        'url': 'registration/2',
+        'title': 'Sign in',
         'theme': 'registration',
         'icon': 'icon-comment-account',
         'listView': false,

@@ -3,11 +3,11 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 
 @Component({
-  selector: 'test-1',
-  templateUrl: './qad-register-1.page.html',
-  styleUrls: ['./qad-register-1.page.scss'],
+  selector: 'cs-auth',
+  templateUrl: './qad-auth.page.html',
+  styleUrls: ['./qad-auth.page.scss'],
 })
-export class QadRegister1Page implements OnChanges {
+export class QadAuthPage implements OnChanges {
 
   constructor(private http: HttpClient) {
   }
@@ -27,8 +27,6 @@ export class QadRegister1Page implements OnChanges {
 
   item = {
     'password': '',
-    'displayName': '',
-    'confirmPassword': '',
     'email': ''
   };
 
@@ -38,7 +36,7 @@ export class QadRegister1Page implements OnChanges {
     this.data = changes['data'].currentValue;
   }
 
-  onRegisterFunc(): void {
+  loginFunc(): void {
     if (event) {
       event.stopPropagation();
     }
@@ -54,7 +52,7 @@ export class QadRegister1Page implements OnChanges {
 
     console.log(this.item);
     
-    this.http.post('//localhost:8080/register', this.item, { headers: headers }).subscribe(
+    this.http.post('//localhost:8080/login', this.item, { headers: headers }).subscribe(
         res => {
           console.log(res);
         },
